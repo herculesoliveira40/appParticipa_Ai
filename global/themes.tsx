@@ -1,11 +1,12 @@
 
 
 export const themas = {
-    colors: {
+    Colors: {
         primary: '#878af6',
         secondary: '#ffffff',
         lighGray: '#d7d8d7',
         gray: 'gray',
+        white: 'white',
         bgScreen: '#f1f7fa',
 
     }

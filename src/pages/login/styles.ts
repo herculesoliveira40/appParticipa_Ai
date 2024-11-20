@@ -1,95 +1,101 @@
-import {Dimensions, StyleSheet} from "react-native";
+import { StyleSheet,Dimensions} from "react-native";
 import { themas } from "../../../global/themes";
 
+
 export const style = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#f2f2f2",
-        justifyContent: "center",
-        alignItems: "center"
+    container:{
+        flex:1,
+        alignItems:'center',
+        justifyContent:'center'
     },
-    boxNav: {
-        backgroundColor: 'pink',
-        alignItems: "flex-start",
-      //  justifyContent: 'center',
-        width: '100%',
-        height: 200,
-       // padding: 10,
+    boxTop:{
+        height:Dimensions.get('window').height/3,
+        width:'100%',
+        // backgroundColor:'red',
+        alignItems:'center',
+        justifyContent:'center'
     },
-    boxTop: {
-        backgroundColor: 'red',
-        height: Dimensions.get('window').height/3,
-        width: '100%', 
-           
+    boxMid:{
+        height:Dimensions.get('window').height/4,
+        // backgroundColor:'blue',
+        width:'100%',
+        paddingHorizontal:37,
     },
-    button: {
-        width: 250,
-        height: 50,
-        backgroundColor: themas.colors.primary,
-        borderRadius: 40,
-        justifyContent: 'center',
-        alignItems: 'center',
+    boxBottom:{
+        height:Dimensions.get('window').height/3,
+        // backgroundColor:'green',
+        width:'100%',
+        alignItems:'center',
+        justifyContent:'flex-start'
         
     },
-    textButton: {
-        fontWeight: 'bold',
-        color: themas.colors.secondary,
-        fontSize: 28,
-    
-        
+    boxInput:{
+        width:'100%',
+        height:40,
+        borderWidth:1,
+        borderRadius:40,
+        borderColor:themas.Colors.lighGray,
+        backgroundColor:themas.Colors.bgScreen,
+        marginTop:10,
+        flexDirection:'row',
+        alignItems:'center',
+        paddingHorizontal:30
     },
-    boxMid: {
-        backgroundColor: 'green',
-        height: Dimensions.get('window').height/5,
-        width: '100%',    
-        paddingHorizontal: 20,
+    logo:{
+        width:80,
+        height:80,
+        marginTop:40
     },
-    boxBootom: {
-        backgroundColor: 'blue',
-        height: Dimensions.get('window').height/10,
-        width: '100%',   
-        justifyContent: "space-evenly",
-        flexDirection: "row",
-        alignItems: "center",
+    text:{
+        marginTop:35,
+        fontSize:18,
+        fontWeight:'bold'
     },
-    logo: {      
-      //  height: 80,
-        width: 200,    
+    input:{
+        // backgroundColor:'red',
+        height:'100%',
+        width:'100%',
+        borderRadius:40,
+        // paddingHorizontal:20
     },
-    text: {       
-        fontWeight: 'bold',
-        marginTop: 40,
-        fontSize: 50,
+    boxIcon:{
+        width:50,
+        height:50,
+        backgroundColor:'red'
     },
-    titleInput: {
-        marginLeft: 30,
-        color: themas.colors.gray,
-        marginTop: 20,
-    }, 
-    boxInput: {
-        width: '100%',
-        height: 40,
-        borderWidth: 1,
-        marginTop: 10,
-        flexDirection: 'row',
-        borderRadius: 40,
-        alignItems: "center",
-        paddingHorizontal: 10,
-        backgroundColor: themas.colors.lighGray,
-        borderColor: themas.colors.gray,
+    titleInput:{
+        marginLeft:5,
+        color:themas.Colors.gray,
+        marginTop:20
     },
-    input: {
-        height: '100%',
-        width: '90%',
-     //   backgroundColor: 'red',
-        borderRadius: 40,
-        paddingLeft: 10,
+    button:{
+        width:200,
+        height:50,
+        alignItems:'center',
+        justifyContent:'center',
+        backgroundColor:themas.Colors.primary,
+        borderRadius:40,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 3,
+        },
+        shadowOpacity: 0.29,
+        shadowRadius: 4.65,
+
+        elevation: 7,
     },
-    
-    textBottom: {
-        marginTop: 30,
-        color: themas.colors.gray,
-        fontSize: 14,
+    textButton:{
+        fontSize:16,
+        color:'#FFFF',
+        fontWeight:'bold'
+    },
+    textBottom:{
+        fontSize:16,
+        color:themas.Colors.gray
+    },
+    textBottomCreate:{
+        fontSize:16,
+        color:themas.Colors.primary
     }
-        
 })
