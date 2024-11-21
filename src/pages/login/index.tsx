@@ -10,8 +10,8 @@ import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 
 export default function Login() {
-  
-  const [email, setEmail] = useState('');
+  const navigation = useNavigation<NavigationProp<any>>();
+  const [email, setEmail] = useState('email@test.com');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(true);
   const [loading, setLoading] = useState(false);
@@ -30,6 +30,8 @@ export default function Login() {
           if (email === 'email@test.com' && password === '1234') {
             console.log('Logado com sucesso :D');
             Alert.alert('Logado com sucesso :D');
+            navigation.navigate('BottomRoutes'); //mudar para a tela desejada
+           //return navigation.reset({routes:[{name :'BottomRoutes'}]});
           } else {
             Alert.alert('Atenção', 'Usuário não encontrado');
           }

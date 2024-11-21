@@ -12,12 +12,15 @@ export default function Routes() {
         <Stack.Navigator 
             initialRouteName="Login" 
             screenOptions={{
-                headerShown: false
-            }
-        }>
+                headerShown: false,
+                cardStyle: { 
+                    backgroundColor: "#FFF"
+                }
+            }}
+        >
             <Stack.Screen name="Login" component={Login} options={{ headerTitle: 'Login' }} />
-           {/*  <Stack.Screen name="BottomRoutes" component={BottomRoutes} options={{ headerTitle: 'BottomRoutes' }} />
-             <Stack.Screen name="Educ" component={Educ} options={{ headerTitle: 'Educ' }} /> */}
+            <Stack.Screen name="BottomRoutes" component={BottomRoutes} options={{ headerTitle: 'BottomRoutes' }} />
+            {/* <Stack.Screen name="Educ" component={Educ} options={{ headerTitle: 'Educ' }} /> */}
         </Stack.Navigator>
     )
 }

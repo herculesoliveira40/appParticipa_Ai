@@ -7,9 +7,11 @@ import { themas } from '../../../global/themes';
 
 export default function Educ() {
     return (
-        <Text> 
-            Tela Educ 
-        </Text>
-
-    )
-}    
+        <View style={{flex:1, justifyContent:'center', alignItems:'center'}}> 
+              <Text> 
+                 Tela Educacao 
+             </Text>
+        </View>
+ 
+     )
+ }    
