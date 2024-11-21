@@ -46,7 +46,7 @@ export const Input = forwardRef((Props:Props, ref: LegacyRef<TextInput> | null)=
 
     return (
         <Fragment>
-            <Text style={style.titleInput}> {title} </Text>
+            {title && <Text style={style.titleInput}> {title} </Text>} 
             <View style={[style.boxInput,{paddingLeft:calculateSizePaddingLeft()}]}>
                 {IconLeft && iconLeftName && (
                     <TouchableOpacity onPress={onIconLeftPress}>
@@ -70,4 +70,3 @@ export const Input = forwardRef((Props:Props, ref: LegacyRef<TextInput> | null)=
 })
 
 
-//26 https://www.youtube.com/watch?v=1iYA1Qf_2UI&list=PLN5FV-HmjCA8UKWLep7O31PtQYqML8-Wd&index=2&ab_channel=CaioeduardoDev 

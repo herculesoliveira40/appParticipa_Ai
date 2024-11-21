@@ -7,6 +7,7 @@ import Logo from '../../assets/logop.png';
 import { MaterialIcons, Octicons } from '@expo/vector-icons';
 import { themas } from '../../../global/themes';
 import { Input } from '../../components/Input';
+import { Button } from '../../components/Button';
 
 export default function Login() {
   
@@ -82,13 +83,11 @@ export default function Login() {
 
       <View style={style.boxBottom}>
         <View>
-          <TouchableOpacity style={style.button} onPress={getLogin}>
-            {loading ? (
-              <ActivityIndicator color='#FFFF' size='small' />
-            ) : (
-              <Text style={style.textButton}>Entrar</Text>
-            )}
-          </TouchableOpacity>
+          <Button 
+            text='Entrar'
+            loading={loading}
+            onPress={() => getLogin()}
+          />
         </View>
         <Text style={style.textBottom}>
           Não tem conta? <Text style={style.textBottomCreate}>Crie agora</Text>
