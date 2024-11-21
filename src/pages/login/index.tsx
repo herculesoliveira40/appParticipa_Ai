@@ -4,13 +4,15 @@ import { Text, TextInput, View, Image, TouchableOpacity, Alert, ActivityIndicato
 import { useNavigation, NavigationProp } from '@react-navigation/native';
 import { style } from './styles';
 import Logo from '../../assets/logop.png';
-import { MaterialIcons } from '@expo/vector-icons';
+import { MaterialIcons, Octicons } from '@expo/vector-icons';
 import { themas } from '../../../global/themes';
+import { Input } from '../../components/Input';
 
 export default function Login() {
   
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(true);
   const [loading, setLoading] = useState(false);
 
   async function getLogin() {
@@ -58,34 +60,26 @@ export default function Login() {
         <Text style={style.text}>Bem vindo de volta!</Text>
       </View>
       <View style={style.boxMid}>
-        <Text style={style.titleInput}>Digite seu email</Text>
-        <View style={style.boxInput}>
-          <TextInput 
-            style={style.input}
-            value={email}
-            onChangeText={setEmail}
-          />
-          <MaterialIcons 
-            name="email"
-            size={20}
-            color={themas.Colors.gray}
-          />
-        </View>
-        <Text style={style.titleInput}>Informe sua senha</Text>
-        <View style={style.boxInput}>
-          <TextInput 
-            style={style.input}
-            value={password}
-            onChangeText={setPassword}
-          />
-          <MaterialIcons 
-            name="remove-red-eye"
-            size={20}
-            color={themas.Colors.gray}
-          />
-        </View>
+        <Input 
+          value={email}
+          onChangeText={setEmail}
+          title="Digite seu email"
+          IconRight={MaterialIcons}
+          iconRightName= 'email'
+        />
+        <Input 
+          value={password}
+          onChangeText={setPassword}
+          title="Informe a senha"
+          IconRight={Octicons}
+          iconRightName= {showPassword ? "eye-closed" : "eye"}
+          secureTextEntry= {showPassword}
+          onIconRightPress={() =>setShowPassword(!showPassword)}
+        />
         <Text>Esqueceu a senha?</Text> 
-      </View>
+      </View>   
+      <Text> </Text>       <Text> </Text> 
+
       <View style={style.boxBottom}>
         <View>
           <TouchableOpacity style={style.button} onPress={getLogin}>
