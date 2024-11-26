@@ -8,6 +8,9 @@ export const themas = {
         gray: 'gray',
         white: 'white',
         bgScreen: '#f1f7fa',
+        primaryButton: '#01403A',
+        secondaryText: '#AAA713',
+        
 
     }
 }

@@ -50,19 +50,26 @@ export default function Login() {
   return (
     <View style={style.container}>
       <View style={style.boxTop}>
-        <MaterialIcons 
-          name='air'
-          size={20}
-          color={themas.Colors.gray}
-        />
         <Image 
           source={Logo} 
           style={style.logo}
           resizeMode="contain"
         />
-        <Text style={style.text}>Bem vindo de volta!</Text>
+        <MaterialIcons 
+          name='air'
+          size={32}
+          color={themas.Colors.gray}
+          paddingHorizontal= {20}
+        />
+        
+
       </View>
       <View style={style.boxMid}>
+         <Text style={style.text}>
+          Seja bem vindo ao 
+          <Text style={{ color: themas.Colors.secondaryText }}> Participa.ai</Text>
+        </Text>
+      <Text style={ style.textScreen}> Entrar </Text>
         <Input 
           value={email}
           onChangeText={setEmail}
@@ -79,9 +86,9 @@ export default function Login() {
           secureTextEntry= {showPassword}
           onIconRightPress={() =>setShowPassword(!showPassword)}
         />
-        <Text>Esqueceu a senha?</Text> 
+       <Text style={{ textAlign: 'right' }}>Esqueceu a senha?</Text> 
       </View>   
-      <Text> </Text>       <Text> </Text> 
+      <Text> </Text>       <Text> </Text>  <Text></Text> <Text></Text>
 
       <View style={style.boxBottom}>
         <View>

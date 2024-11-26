@@ -9,14 +9,15 @@ export const style = StyleSheet.create({
         justifyContent:'center'
     },
     boxTop:{
-        height:Dimensions.get('window').height/3,
+        height:Dimensions.get('window').height/4,
         width:'100%',
         // backgroundColor:'red',
-        alignItems:'center',
-        justifyContent:'center'
+        flexDirection: 'row', 
+        alignItems: 'center',
+        justifyContent: 'space-between',
     },
     boxMid:{
-        height:Dimensions.get('window').height/4,
+        height:Dimensions.get('window').height/3,
         // backgroundColor:'blue',
         width:'100%',
         paddingHorizontal:37,
@@ -75,6 +76,11 @@ export const style = StyleSheet.create({
     },
     textBottomCreate:{
         fontSize:16,
-        color:themas.Colors.primary
-    }
+        color:themas.Colors.secondaryText
+    },
+    textScreen:{
+        fontSize:32,
+        color:themas.Colors.primaryButton,
+        fontWeight:'bold'
+    },
 })
