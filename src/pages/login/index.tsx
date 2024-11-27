@@ -13,7 +13,7 @@ import { NavTop } from '../../components/NavTop';
 export default function Login() {
   const navigation = useNavigation<NavigationProp<any>>();
   const [email, setEmail] = useState('email@test.com');
-  const [password, setPassword] = useState('');
+  const [password, setPassword] = useState('1234');
   const [showPassword, setShowPassword] = useState(true);
   const [loading, setLoading] = useState(false);
 

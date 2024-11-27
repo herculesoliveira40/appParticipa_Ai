@@ -17,6 +17,7 @@ export default function Educ() {
                     iconName='air'
                 />
             </View>
+            <Text style={ style.textScreen}> Educação </Text>
               <Text> 
                  Tela Educacao 
              </Text>
