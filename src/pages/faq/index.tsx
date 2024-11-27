@@ -4,7 +4,8 @@ import { style } from './styles';
 import {MaterialIcons} from '@expo/vector-icons';
 import { themas } from '../../../global/themes';
 import { Accordion } from '../../components/Accordion';
-
+import { NavTop } from '../../components/NavTop';
+import Logo from '../../assets/logop.png';
 
  export default function Faq() {
   const [isOpen1, setIsOpen1] = useState(false);
@@ -13,7 +14,13 @@ import { Accordion } from '../../components/Accordion';
   const [isOpen4, setIsOpen4] = useState(false);
 
   return (
-    <View style={{flex:1, justifyContent:'center', alignItems:'center', paddingTop: 80}}>
+    <View style={style.container}>
+      <View style={style.boxTop}> 
+        <NavTop 
+            logo={Logo} 
+            iconName='air'
+          />
+      </View>
       <Text style={ style.textScreen}> Perguntas Frequentes </Text>
     <SafeAreaView>
       <ScrollView >      

@@ -12,9 +12,7 @@ export const style = StyleSheet.create({
         height:Dimensions.get('window').height/4,
         width:'100%',
         // backgroundColor:'red',
-        flexDirection: 'row', 
-        alignItems: 'center',
-        justifyContent: 'space-between',
+
     },
     boxMid:{
         height:Dimensions.get('window').height/3,
@@ -31,11 +29,6 @@ export const style = StyleSheet.create({
         
     },
   
-    logo:{
-        width:80,
-        height:80,
-        marginTop:40
-    },
     text:{
         marginTop:35,
         fontSize:18,

@@ -3,11 +3,20 @@ import { Text, TextInput, View, Image, TouchableOpacity, Alert, ActivityIndicato
 import { style } from './styles';
 import {MaterialIcons} from '@expo/vector-icons';
 import { themas } from '../../../global/themes';
+import { NavTop } from '../../components/NavTop';
+import Logo from '../../assets/logop.png';
 
 
 export default function Educ() {
     return (
-        <View style={{flex:1, justifyContent:'center', alignItems:'center'}}> 
+      
+        <View style={style.container}>
+            <View style={style.boxTop}> 
+                <NavTop 
+                    logo={Logo} 
+                    iconName='air'
+                />
+            </View>
               <Text> 
                  Tela Educacao 
              </Text>

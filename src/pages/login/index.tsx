@@ -8,6 +8,7 @@ import { MaterialIcons, Octicons } from '@expo/vector-icons';
 import { themas } from '../../../global/themes';
 import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
+import { NavTop } from '../../components/NavTop';
 
 export default function Login() {
   const navigation = useNavigation<NavigationProp<any>>();
@@ -50,19 +51,11 @@ export default function Login() {
   return (
     <View style={style.container}>
       <View style={style.boxTop}>
-        <Image 
-          source={Logo} 
-          style={style.logo}
-          resizeMode="contain"
+        <NavTop 
+          logo={Logo} 
+          iconName='air'
         />
-        <MaterialIcons 
-          name='air'
-          size={32}
-          color={themas.Colors.gray}
-          paddingHorizontal= {20}
-        />
-        
-
+        {/* Outras partes do seu código */}
       </View>
       <View style={style.boxMid}>
          <Text style={style.text}>
