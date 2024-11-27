@@ -8,7 +8,7 @@ export const style = StyleSheet.create({
         height:50,
         alignItems:'center',
         justifyContent:'center',
-        backgroundColor:themas.Colors.primaryButton,
+        backgroundColor:themas.Colors.primaryText,
         borderRadius:40,
         shadowColor: "#000",
         shadowOffset: {

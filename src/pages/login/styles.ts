@@ -80,7 +80,7 @@ export const style = StyleSheet.create({
     },
     textScreen:{
         fontSize:32,
-        color:themas.Colors.primaryButton,
+        color:themas.Colors.primaryText,
         fontWeight:'bold'
     },
 })

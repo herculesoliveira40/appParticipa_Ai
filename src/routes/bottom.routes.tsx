@@ -4,6 +4,7 @@ import Dashboard from '../pages/dashboard';
 import Educ from '../pages/educ';
 import User from '../pages/user';
 import CustomTabBar from '../components/CustomTabBar';
+import Faq from '../pages/faq';
 
 const Tab = createBottomTabNavigator();
 
@@ -27,6 +28,10 @@ const Tab = createBottomTabNavigator();
                 <Tab.Screen 
                     name="Educ" 
                     component={Educ} options={{ headerTitle: 'Educ' }} 
+                />
+                <Tab.Screen
+                    name="Faq" 
+                    component={Faq} options={{ headerTitle: 'Faq' }}
                 />
                 <Tab.Screen
                     name="User" 

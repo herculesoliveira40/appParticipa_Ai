@@ -21,4 +21,3 @@ export function Button({...rest}:Props) {
 }
 
 
-//40 https://www.youtube.com/watch?v=1iYA1Qf_2UI&list=PLN5FV-HmjCA8UKWLep7O31PtQYqML8-Wd&index=2&ab_channel=CaioeduardoDev 

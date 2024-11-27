@@ -29,6 +29,12 @@ export default ({ state, navigation }: any)=>{
                     style={{opacity:state.index===2?1:0.5,color:themas.Colors.primary,fontSize:32}}
                 />
             </TouchableOpacity>                
+            <TouchableOpacity style={style.tabItem} onPress={()=>go('Faq')}>
+                <MaterialIcons
+                    name="info"
+                    style={{opacity:state.index===2?1:0.5,color:themas.Colors.primary,fontSize:32}}
+                />
+            </TouchableOpacity>                
             <TouchableOpacity style={style.tabItem} onPress={()=>go('User')}>
                 <MaterialIcons
                     name="person-outline"
@@ -40,5 +46,3 @@ export default ({ state, navigation }: any)=>{
     );
 }
 
-
-//0 https://www.youtube.com/watch?v=3qZxSw_TIr4&list=PLN5FV-HmjCA8UKWLep7O31PtQYqML8-Wd&index=4&ab_channel=CaioeduardoDev
