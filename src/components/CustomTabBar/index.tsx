@@ -35,7 +35,7 @@ export default ({ state, navigation }: any)=>{
                     style={{opacity:state.index===2?1:0.5,color:themas.Colors.primary,fontSize:32}}
                 />
             </TouchableOpacity>                
-            <TouchableOpacity style={style.tabItem} onPress={()=>go('User')}>
+            <TouchableOpacity style={style.tabItem} onPress={()=>go('Create')}>
                 <MaterialIcons
                     name="person-outline"
                     style={{opacity:state.index===3?1:0.5,color:themas.Colors.primary,fontSize:32}}

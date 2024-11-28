@@ -10,7 +10,7 @@ export const style = StyleSheet.create({
         borderRadius:40,
         borderColor:themas.Colors.lighGray,
         backgroundColor:themas.Colors.bgScreen,
-        marginTop:10,
+        marginTop:5,
         flexDirection:'row',
         alignItems:'center',
         paddingHorizontal:30
@@ -25,7 +25,7 @@ export const style = StyleSheet.create({
     titleInput:{
         marginLeft:5,
         color:themas.Colors.gray,
-        marginTop:20
+        marginTop:10
     },
     Icon: {
         width:'100%',

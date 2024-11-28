@@ -1,3 +1,4 @@
+// https://www.youtube.com/watch?v=A5yIPclvjJk&list=PLN5FV-HmjCA8UKWLep7O31PtQYqML8-Wd&ab_channel=CaioeduardoDev
 import React, { useState } from 'react';
 import { Text, TextInput, View, Image, TouchableOpacity, Alert, ActivityIndicator } from 'react-native';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
@@ -9,43 +10,13 @@ import { Input } from '../../components/Input';
 import { Button } from '../../components/Button';
 import { NavTop } from '../../components/NavTop';
 
-export default function Login() {
+export default function Create() {
   const navigation = useNavigation<NavigationProp<any>>();
-  const [email, setEmail] = useState('email@test.com');
-  const [password, setPassword] = useState('1234');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [name, setName] = useState('');
   const [showPassword, setShowPassword] = useState(true);
   const [loading, setLoading] = useState(false);
-
-  async function getLogin() {
-    try {
-      setLoading(true);
-
-      if (!email || !password) {
-        setLoading(false);
-        return Alert.alert('Atenção', 'Campos obrigatórios');
-      }  
-
-      setTimeout(() => {
-        try {
-          if (email === 'email@test.com' && password === '1234') {
-            console.log('Logado com sucesso :D');
-            Alert.alert('Logado com sucesso :D');
-            navigation.navigate('BottomRoutes'); //mudar para a tela desejada
-           //return navigation.reset({routes:[{name :'BottomRoutes'}]});
-          } else {
-            Alert.alert('Atenção', 'Usuário não encontrado');
-          }
-        } catch (error) {
-          console.log(error);
-        } finally {
-          setLoading(false);
-        }
-      }, 3000);
-    } catch (error) {
-      console.log(error);
-      setLoading(false);
-    }
-  }
 
   return (
     <View style={style.container}>
@@ -58,10 +29,17 @@ export default function Login() {
       </View>
       <View style={style.boxMid}>
          <Text style={style.text}>
-          Seja bem vindo ao 
+          Crie sua conta no 
           <Text style={{ color: themas.Colors.secondaryText }}> Participa.ai</Text>
         </Text>
-      <Text style={ style.textScreen}> Entrar </Text>
+      <Text style={ style.textScreen}> CADASTRE-SE </Text>
+        <Input 
+          value={name}
+          onChangeText={setEmail}
+          title="Nome"
+          IconRight={MaterialIcons}
+          //iconRightName= 'email'
+        />
         <Input 
           value={email}
           onChangeText={setEmail}
@@ -78,21 +56,32 @@ export default function Login() {
           secureTextEntry= {showPassword}
           onIconRightPress={() =>setShowPassword(!showPassword)}
         />
-       <Text style={{ textAlign: 'right' }}>Esqueceu a senha?</Text> 
-      </View>   
-      <Text> </Text>       <Text> </Text>  <Text></Text> <Text></Text>
+        <Input 
+          value={password}
+          onChangeText={setPassword}
+          title="Confirme a senha"
+          IconRight={Octicons}
+          iconRightName= {showPassword ? "eye-closed" : "eye"}
+          secureTextEntry= {showPassword}
+          onIconRightPress={() =>setShowPassword(!showPassword)}
+        />
 
+       <Text style={{ textAlign: 'right' }}>  
+        <MaterialIcons name='check-box' size={20} color='green'/>                        Aceitar
+         os termos de uso?</Text> 
+      </View>   
+      
       <View style={style.boxBottom}>
         <View>
           <Button 
-            text='Entrar'
+            text='Cadastrar'
             loading={loading}
-            onPress={() => getLogin()}
+          //  onPress={() => getLogin()}
           />
         </View>
-        <TouchableOpacity onPress={() => navigation.navigate('Create')}>
+        <TouchableOpacity onPress={() => navigation.navigate('Login')}>
           <Text style={style.textBottom}>
-            Não tem conta? <Text style={style.textBottomCreate}>Crie agora</Text>
+            Já tem conta? <Text style={style.textBottomCreate}> faça LOGIN</Text>
           </Text>
         </TouchableOpacity>
       </View>

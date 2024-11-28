@@ -2,7 +2,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Login from '../pages/login';
 import Dashboard from '../pages/dashboard';
 import Educ from '../pages/educ';
-import User from '../pages/user';
+import Create from '../pages/create';
 import CustomTabBar from '../components/CustomTabBar';
 import Faq from '../pages/faq';
 
@@ -34,8 +34,8 @@ const Tab = createBottomTabNavigator();
                     component={Faq} options={{ headerTitle: 'Faq' }}
                 />
                 <Tab.Screen
-                    name="User" 
-                    component={User} options={{ headerTitle: 'User' }}
+                    name="Create" 
+                    component={Create} options={{ headerTitle: 'Create' }}
                 />
             </Tab.Navigator>
         );
