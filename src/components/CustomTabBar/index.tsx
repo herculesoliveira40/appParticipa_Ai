@@ -11,31 +11,28 @@ export default ({ state, navigation }: any)=>{
     })
     return (
        <View style={style.tabArea}>
-            <TouchableOpacity style={style.tabItem} onPress={()=>go('Login')}>
+            <TouchableOpacity style={style.tabItem} onPress={()=>go('Dashboard')}>
                 <MaterialIcons
                     name="insights"
                     style={{opacity:state.index===0?1:0.5,color:themas.Colors.primary,fontSize:32}}
                 />
-            </TouchableOpacity>                
-            <TouchableOpacity style={style.tabItem} onPress={()=>go('Dashboard')}>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={style.tabItem} onPress={()=>go('Educ')}>
                 <MaterialIcons
                     name="content-paste"
                     style={{opacity:state.index===1?1:0.5,color:themas.Colors.primary,fontSize:32}}
                 />
-            </TouchableOpacity>                
-            <TouchableOpacity style={style.tabItem} onPress={()=>go('Educ')}>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={style.tabItem} onPress={()=>go('Faq')}>
                 <MaterialIcons
                     name="info-outline"
                     style={{opacity:state.index===2?1:0.5,color:themas.Colors.primary,fontSize:32}}
                 />
-            </TouchableOpacity>                
-            <TouchableOpacity style={style.tabItem} onPress={()=>go('Faq')}>
-                <MaterialIcons
-                    name="info"
-                    style={{opacity:state.index===2?1:0.5,color:themas.Colors.primary,fontSize:32}}
-                />
-            </TouchableOpacity>                
-            <TouchableOpacity style={style.tabItem} onPress={()=>go('Create')}>
+            </TouchableOpacity>  
+                                        
+            <TouchableOpacity style={style.tabItem} onPress={()=>go('User')}>
                 <MaterialIcons
                     name="person-outline"
                     style={{opacity:state.index===3?1:0.5,color:themas.Colors.primary,fontSize:32}}

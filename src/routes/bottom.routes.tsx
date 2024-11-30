@@ -2,15 +2,17 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Login from '../pages/login';
 import Dashboard from '../pages/dashboard';
 import Educ from '../pages/educ';
-import Create from '../pages/create';
+import User from '../pages/user';
 import CustomTabBar from '../components/CustomTabBar';
 import Faq from '../pages/faq';
+import Create from '../pages/create';
 
 const Tab = createBottomTabNavigator();
 
     export default function BottomRoutes() {
         return(
             <Tab.Navigator
+            initialRouteName="Faq" //Tela inicial Faq route
             screenOptions={{
                 headerShown: false
             }}
@@ -19,6 +21,10 @@ const Tab = createBottomTabNavigator();
                 <Tab.Screen 
                     name="Login" 
                     component={Login} options={{ headerTitle: 'Login' }} 
+                />
+                <Tab.Screen 
+                    name="Create" 
+                    component={Create} options={{ headerTitle: 'Create' }} 
                 />
                 <Tab.Screen 
                     name="Dashboard" 
@@ -34,8 +40,8 @@ const Tab = createBottomTabNavigator();
                     component={Faq} options={{ headerTitle: 'Faq' }}
                 />
                 <Tab.Screen
-                    name="Create" 
-                    component={Create} options={{ headerTitle: 'Create' }}
+                    name="User" 
+                    component={User} options={{ headerTitle: 'User' }}
                 />
             </Tab.Navigator>
         );

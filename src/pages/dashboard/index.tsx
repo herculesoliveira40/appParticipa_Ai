@@ -16,8 +16,9 @@ export default function Dashboard() {
                     iconName='air'
                 />
             </View>
+            <Text style={ style.textScreen}> DashBoard </Text>
               <Text> 
-              Tela Dashboard 
+                 Ainda não tem dados para exibir ;-;
              </Text>
         </View>
  
