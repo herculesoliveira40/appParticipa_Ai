@@ -55,16 +55,19 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento e rodar o ap
 
 ### Descrição dos Diretórios
 
-
-
 ```bash
-
 root
-├── assets          # Recursos estáticos como imagens, fontes, etc.
-├── components      # Componentes reutilizáveis do aplicativo
-├── pages ou screens         # Telas do aplicativo
-├── navigation      # Configuração da navegação
-├── App.tsx         # Componente principal do aplicativo
-├── app.json        # Configuração do Expo
-├── package.json    # Dependências e scripts do npm
-└── tsconfig.json   # Configurações do TypeScript
+├── global
+│   └── themes.tsx       # Definições de temas globais
+├── src
+│   ├── assets           # Recursos estáticos como imagens, fontes, etc.
+│   ├── components       # Componentes reutilizáveis do aplicativo
+│   ├── pages ou screens # Telas do aplicativo
+│   ├── routes           # Configuração das rotas
+│   ├── @types           # Definições de tipos TypeScript
+│   ├── routes           # Configuração da navegação
+├── App.tsx              # Componente principal do aplicativo
+├── app.json             # Configuração do Expo
+├── package.json         # Dependências e scripts do npm
+├── tsconfig.json        # Configurações do TypeScript
+
