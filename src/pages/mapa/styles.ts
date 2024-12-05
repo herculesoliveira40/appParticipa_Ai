@@ -14,12 +14,13 @@ export const style = StyleSheet.create({
         // backgroundColor:'red',
 
     },
+    textBottom:{
+        fontSize:16,
+        color:themas.Colors.gray
+    },
     textBottomCreate:{
         fontSize:16,
-        color:themas.Colors.secondaryText,
-        marginTop: 40,
-        marginBottom: 20,
-        textAlign:'center'
+        color:themas.Colors.secondaryText
     },
         textScreen:{
             fontSize: 28,

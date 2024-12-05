@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Text, TextInput, View, Image, TouchableOpacity, Alert, ActivityIndicator, SafeAreaView, ScrollView} from 'react-native';
 import { style } from './styles';
+import { useNavigation, NavigationProp } from '@react-navigation/native';
 import {MaterialIcons} from '@expo/vector-icons';
 import { themas } from '../../../global/themes';
 import { Accordion } from '../../components/Accordion';
@@ -12,6 +13,7 @@ import Logo from '../../assets/logop.png';
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
   const [isOpen4, setIsOpen4] = useState(false);
+  const navigation = useNavigation<NavigationProp<any>>();
 
   return (
     <View style={style.container}>
@@ -51,6 +53,11 @@ import Logo from '../../assets/logop.png';
           isOpen={isOpen4}
           onToggle={() => setIsOpen4(!isOpen4)}
         />
+        <TouchableOpacity onPress={() => navigation.navigate('Mapa')}>
+            <Text style={ style.textBottomCreate}>
+            Clique aqui para ver O MAPA
+            </Text>
+        </TouchableOpacity>
       </ScrollView>
      
     </SafeAreaView>

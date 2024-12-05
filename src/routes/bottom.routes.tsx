@@ -6,6 +6,7 @@ import User from '../pages/user';
 import CustomTabBar from '../components/CustomTabBar';
 import Faq from '../pages/faq';
 import Create from '../pages/create';
+import Mapa from '../pages/mapa';
 
 const Tab = createBottomTabNavigator();
 
@@ -38,6 +39,10 @@ const Tab = createBottomTabNavigator();
                 <Tab.Screen
                     name="Faq" 
                     component={Faq} options={{ headerTitle: 'Faq' }}
+                />
+                <Tab.Screen
+                    name="Mapa" 
+                    component={Mapa} options={{ headerTitle: 'Mapa' }}
                 />
                 <Tab.Screen
                     name="User" 
