@@ -22,10 +22,10 @@ export function CardEduc({ title, description, image, link, ...rest }: Props) {
       <Text style={style.title}>{title}</Text>
       <Text style={style.description}>{description}</Text>
       <TouchableOpacity style={style.button} onPress={handlePress}>
-        <Text style={style.buttonText}>Learn More</Text>
+        <Text style={style.buttonText}>Saiba Mais</Text>
         <MaterialIcons
           name="arrow-forward"
-          size={24}
+          size={10}
           color="#fff"
         />
       </TouchableOpacity>

@@ -6,6 +6,7 @@ export const style = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center', 
+        paddingTop: 1,
       },
       safeArea: {
         flex: 1,
@@ -17,7 +18,7 @@ export const style = StyleSheet.create({
         width: '100%',
       },
       boxTop: {
-        height: Dimensions.get('window').height / 4,
+        height: Dimensions.get('window').height / 5,
         width: '100%',
       },
       textScreen: {

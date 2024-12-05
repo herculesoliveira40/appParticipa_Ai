@@ -6,7 +6,7 @@ export const style = StyleSheet.create({
         flex:1,
         justifyContent:'center',
         alignItems:'center', 
-        paddingTop: 80,
+        paddingTop: 110,
     },
     boxTop:{
         height:Dimensions.get('window').height/4,
