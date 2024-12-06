@@ -21,7 +21,9 @@ export default function User() {
               />
           </View>
           <Text style={ style.textScreen}> User </Text>
-            <Text> 
+
+           <Image source={require('../../assets/dashboard/aviso_construcao.png')}  />
+           <Text> 
                Tela User sair 
            </Text>
       </View>

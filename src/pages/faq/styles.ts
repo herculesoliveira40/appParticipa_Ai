@@ -17,7 +17,7 @@ export const style = StyleSheet.create({
     textBottomCreate:{
         fontSize:16,
         color:themas.Colors.secondaryText,
-        marginTop: 40,
+        marginTop: 20,
         marginBottom: 20,
         textAlign:'center'
     },

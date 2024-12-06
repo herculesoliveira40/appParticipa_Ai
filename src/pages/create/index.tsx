@@ -76,7 +76,7 @@ export default function Create() {
           <Button 
             text='Cadastrar'
             loading={loading}
-          //  onPress={() => getLogin()}
+            onPress={() => alert('Ainda não estamos funcionando, em breve, faça login com os dados do readme')}
           />
         </View>
         <TouchableOpacity onPress={() => navigation.navigate('Login')}>
