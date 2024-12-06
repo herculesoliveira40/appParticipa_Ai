@@ -50,6 +50,11 @@ Siga os passos abaixo para configurar o ambiente de desenvolvimento e rodar o ap
 - O aplicativo será carregado no seu dispositivo móvel e você poderá ver as mudanças em tempo real enquanto desenvolve.
 
 
+### Login e senha já estão preenchidos:
+```
+ Email: email@test.com 
+ Senha: 1234
+```
 
 
 

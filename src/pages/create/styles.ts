@@ -67,7 +67,8 @@ export const style = StyleSheet.create({
     },
     textBottom:{
         fontSize:16,
-        color:themas.Colors.gray
+        color:themas.Colors.gray,
+        paddingTop: 20,
     },
     textBottomCreate:{
         fontSize:16,

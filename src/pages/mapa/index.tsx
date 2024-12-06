@@ -24,7 +24,13 @@ import Logo from '../../assets/logop.png';
           <Text style={style.textBottom}>
             <Text style={style.textBottomCreate}>  Voltar ao FAQ </Text>
           </Text>
-      </TouchableOpacity>
+      </TouchableOpacity>     
+
+        <Image
+          style={style.image}
+          source={require('../../assets/mapa/mapa.png')} 
+        />
+
     </View>
   );
 };

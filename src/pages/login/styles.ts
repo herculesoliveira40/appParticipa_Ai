@@ -11,6 +11,7 @@ export const style = StyleSheet.create({
     boxTop:{
         height:Dimensions.get('window').height/4,
         width:'100%',
+        paddingTop: 10,
         // backgroundColor:'red',
 
     },
@@ -21,11 +22,12 @@ export const style = StyleSheet.create({
         paddingHorizontal:37,
     },
     boxBottom:{
-        height:Dimensions.get('window').height/3,
+        height:Dimensions.get('window').height/2,
         // backgroundColor:'green',
         width:'100%',
         alignItems:'center',
-        justifyContent:'flex-start'
+        justifyContent:'flex-start',
+        paddingTop: 70,
         
     },
   
@@ -65,7 +67,8 @@ export const style = StyleSheet.create({
     },
     textBottom:{
         fontSize:16,
-        color:themas.Colors.gray
+        color:themas.Colors.gray,
+        paddingTop: 60,
     },
     textBottomCreate:{
         fontSize:16,

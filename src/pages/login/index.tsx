@@ -80,7 +80,7 @@ export default function Login() {
         />
        <Text style={{ textAlign: 'right' }}>Esqueceu a senha?</Text> 
       </View>   
-      <Text> </Text>       <Text> </Text>  <Text></Text> <Text></Text>
+      {/* <Text> </Text>       <Text> </Text>  <Text></Text> <Text></Text> */}
 
       <View style={style.boxBottom}>
         <View>
